@@ -775,7 +775,7 @@ div#timeline_container > ul > li {
 }
 div#timeline_container > ul > li.hidden {
 	position:absolute;
-	top:-500px;
+	top:-600px;
 }
 div#timeline_container > ul > li div {
 	position:absolute;
