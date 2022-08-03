@@ -713,7 +713,7 @@ section {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: 0.2em;
+  margin-right: 0.6em;
   text-align: center;
   opacity: 0.8;
 /* fix buttons height, for twitter bootstrap */
@@ -727,9 +727,9 @@ section {
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-address:before { content: '\63\73'; } /* 'cs' */
-.icon-graduation-cap:before { content: '\6d\6c'; } /* 'ml' */
-.icon-briefcase:before { content: '\64\6f'; } /* 'do' */
+.icon-address:before { content: '\43\53'; } /* 'cs' */
+.icon-graduation-cap:before { content: '\4D\4C'; } /* 'ml' */
+.icon-briefcase:before { content: '\44\4F'; } /* 'do' */
 * {
   -webkit-box-sizing: border-box;
  -moz-box-sizing:border-box;
@@ -765,7 +765,7 @@ div#timeline_container > ul:after {
 div#timeline_container > ul > li {
 	position:relative;
 	padding:.3em 0;
-	min-height:200px;
+	min-height:250px;
 	cursor:pointer;
 	
 	-webkit-transition:all 0.3s ease-out;
@@ -810,11 +810,11 @@ div#timeline_container > ul > li.devOps_event:hover div.event_icn,div#timeline_c
 
 
 div#timeline_container > ul > li div.event_content {
-	width:400px;
+	width:700px;
 	padding:1em 2em 1.3em;
 	border:1px solid #DDDBDA;
 	border-radius:10px;
-	top:-2em;
+	top:-1em;
 	opacity:0.3;
 	background:white;
 	-webkit-transition:all 0.3s ease-in-out;
@@ -828,10 +828,10 @@ div#timeline_container > ul > li:hover div.event_content,div#timeline_container 
 	opacity:1;
 }
 div#timeline_container > ul > li:nth-child(odd) div.event_content {
-	right:-470px;
+	right:-770px;
 }
 div#timeline_container > ul > li:nth-child(even) div.event_content {
-	left:-470px;
+	left:-770px;    
 	text-align:right
 }
 div#timeline_container > ul > li div.event_content:before {
@@ -841,7 +841,7 @@ div#timeline_container > ul > li div.event_content:before {
 	height:20px;
 	border-bottom:1px solid #DDDBDA;
 	border-left:1px solid #DDDBDA;
-	top:3em;
+	/* top:1em; */
 	background:#ebe7e4;
 	margin-top:8px;
 	background:white;
@@ -883,8 +883,8 @@ div#timeline_container > ul > li div.event_content ul {
 }
 
 div#timeline_container > ul > li div.event_date {
-	top:1em;
-	width:180px;
+	top:0.125em;
+	width:200px;
 	text-align:right;
 	font-size:1.2em;
 	text-shadow:1px 1px 1px white;
@@ -899,7 +899,7 @@ div#timeline_container > ul > li:nth-child(even) div.event_date {text-align:left
 
 div#timeline_container > ul > li:hover div.event_date,div#timeline_container > ul li.active div.event_date {opacity:0.9;}
 div#timeline_container > ul > li:nth-child(odd) div.event_date {right:60px;}
-div#timeline_container > ul > li:nth-child(even) div.event_date {left:60px;} */
+div#timeline_container > ul > li:nth-child(even) div.event_date {left:60px;} 
 
 .services .icon-box {
   text-align: center;

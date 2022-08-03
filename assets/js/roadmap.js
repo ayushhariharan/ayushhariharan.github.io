@@ -17,17 +17,15 @@
 ## Web Symbols
    Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
    Author:    Just Be Nice studio
-   License:   SIL (http://scripts.sil.org/OFL)
+   License: 	  SIL (http://scripts.sil.org/OFL)
    Homepage:  http://www.justbenicestudio.com/studio/websymbols/
 */
 //=====================================//
 
 
-$('nav ul#main_nav').on('click','li',function(){
-	var $type=$(this).attr('data-title');
-	$('nav ul#main_nav li').removeClass('active')
-	if ($type=='all') {
-		$('nav ul#main_nav li').addClass('active');
+$('#portfolio-flters li').on('click', function(){
+	var $type=$(this).attr('data-filter');
+	if ($type=='*') {
 		$('div#timeline_container >ul> li').removeClass('hidden');
 		$('div#timeline_container >ul> li').removeClass('active');
 		$($('div#timeline_container >ul> li')[0]).addClass('active');
