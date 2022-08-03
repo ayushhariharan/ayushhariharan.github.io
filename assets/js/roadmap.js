@@ -22,22 +22,72 @@
 */
 //=====================================//
 
+$('div#dropdown').on('click', function(){
+	var $map_type=$(this).attr('data-filter')
+
+	if($('div#dropdown> div').hasClass('down')) {
+		if ($map_type=='*') {
+			$('div#timeline_container >ul> li').removeClass('active');
+			$('div#timeline_container >ul> li').removeClass('hidden');
+			$($('div#timeline_container >ul> li')[0]).addClass('active');
+		} else {
+			$(this).addClass('active');
+			$('div#timeline_container >ul> li').addClass('hidden');	
+			$('div#timeline_container >ul> li.'+$map_type+'_event').removeClass('hidden');
+			$('div#timeline_container >ul> li').removeClass('active');
+			$($('div#timeline_container >ul> li.'+$map_type+'_event')[0]).addClass('active');
+		}
+		$('div#dropdown> div').removeClass('down')
+		$('div#dropdown> div').addClass('up')
+	} else {
+		if ($map_type=='*') {
+			$('div#timeline_container >ul> li').removeClass('active');
+			$('div#timeline_container >ul> li').addClass('hidden');
+
+			$($('div#timeline_container >ul> li')[0]).removeClass('hidden');
+			$($('div#timeline_container >ul> li')[1]).removeClass('hidden');
+			$($('div#timeline_container >ul> li')[0]).addClass('active');
+			$('div#dropdown').attr('data-filter', '*')
+	
+		} else {
+			$('div#timeline_container >ul> li').addClass('hidden');	
+			$($('div#timeline_container >ul> li.'+$map_type+'_event')[0]).removeClass('hidden');
+			$($('div#timeline_container >ul> li.'+$map_type+'_event')[1]).removeClass('hidden');
+			$('div#timeline_container >ul> li').removeClass('active');
+			$($('div#timeline_container >ul> li.'+$map_type+'_event')[0]).addClass('active');
+			$('div#dropdown').attr('data-filter', $map_type)
+		}
+		$('div#dropdown> div').removeClass('up')
+		$('div#dropdown> div').addClass('down')
+	}
+});
+
 
 $('#portfolio-flters li').on('click', function(){
 	var $type=$(this).attr('data-filter');
 	if ($type=='*') {
-		$('div#timeline_container >ul> li').removeClass('hidden');
 		$('div#timeline_container >ul> li').removeClass('active');
+		$('div#timeline_container >ul> li').addClass('hidden');
+
+		$($('div#timeline_container >ul> li')[0]).removeClass('hidden');
+		$($('div#timeline_container >ul> li')[1]).removeClass('hidden');
 		$($('div#timeline_container >ul> li')[0]).addClass('active');
+		$('div#dropdown').attr('data-filter', '*')
+
 	} else {
-		$(this).addClass('active');
 		$('div#timeline_container >ul> li').addClass('hidden');	
-		$('div#timeline_container >ul> li.'+$type+'_event').removeClass('hidden');
+		$($('div#timeline_container >ul> li.'+$type+'_event')[0]).removeClass('hidden');
+		$($('div#timeline_container >ul> li.'+$type+'_event')[1]).removeClass('hidden');
 		$('div#timeline_container >ul> li').removeClass('active');
 		$($('div#timeline_container >ul> li.'+$type+'_event')[0]).addClass('active');
+		$('div#dropdown').attr('data-filter', $type)
 	}
+
+	$('div#dropdown> div').removeClass('up')
+	$('div#dropdown> div').addClass('down')
 			
 });
+
 
 $(document).on('scroll',function(){
 	$('div#instructions_container').fadeOut('fast');

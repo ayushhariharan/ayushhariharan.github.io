@@ -765,7 +765,7 @@ div#timeline_container > ul:after {
 div#timeline_container > ul > li {
 	position:relative;
 	padding:.3em 0;
-	min-height:250px;
+	min-height:275px;
 	cursor:pointer;
 	
 	-webkit-transition:all 0.3s ease-out;
@@ -900,6 +900,41 @@ div#timeline_container > ul > li:nth-child(even) div.event_date {text-align:left
 div#timeline_container > ul > li:hover div.event_date,div#timeline_container > ul li.active div.event_date {opacity:0.9;}
 div#timeline_container > ul > li:nth-child(odd) div.event_date {right:60px;}
 div#timeline_container > ul > li:nth-child(even) div.event_date {left:60px;} 
+
+div#dropdown {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -6px;
+  top: 20px;
+  position: relative
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 1vw;
+  width: 1vw;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 0px 1px 1px 0px;
+  /* transform: rotate(45deg); */
+  transition: border-width 150ms ease-in-out;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
 
 .services .icon-box {
   text-align: center;
