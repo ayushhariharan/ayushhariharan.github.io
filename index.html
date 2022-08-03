@@ -23,8 +23,11 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: MyResume - v2.2.0
@@ -365,6 +368,46 @@
           <p>Below you can find a roadmap of my personal journey through software engineering. These include projects I've contributed to and skills that I've developed throughout the process.</p>
         </div>
 
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">CompSci</li>
+              <li data-filter=".filter-app">ML</li>
+              <li data-filter=".filter-card">DevOps</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="timeline_container">
+          <ul>
+            <li class="cs_event active">
+              <div class="event_icn icon-address"></div>
+              <!-- <div class="event_content">
+                <h2>Introduction to Quantum</h2>
+                <p>
+                  Implemented Grover's Algorithm and Shor's Factoring Algorithm on IBM Circuit Composer. Tested run time of both the IBM Q32 quantum simulator along with the Q5 and Q14 computers. Designed basic circuits demonstrating entanglement and superposition using IBM Qiskit.
+                </p>
+              </div>
+              <div class="event_date">
+                Fall 2017
+              </div> -->
+            </li>
+            <li class="cs_event active">
+              <div class="event_icn icon-address"></div>
+              <!-- <div class="event_content">
+                <h2>Introduction to Quantum</h2>
+                <p>
+                  Implemented Grover's Algorithm and Shor's Factoring Algorithm on IBM Circuit Composer. Tested run time of both the IBM Q32 quantum simulator along with the Q5 and Q14 computers. Designed basic circuits demonstrating entanglement and superposition using IBM Qiskit.
+                </p>
+              </div>
+              <div class="event_date">
+                Fall 2017
+              </div> -->
+            </li>
+          </ul>
+        </div>
+        <!-- of #timeline_container -->
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -473,6 +516,8 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/roadmap.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
