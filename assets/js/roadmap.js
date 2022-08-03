@@ -48,13 +48,6 @@ $(document).on('click','div#info_container',function(){
 	$('div#info_container').fadeOut('fast');
 });
 
-$(document).on('click','li.icon-down-open',function(){
-	scrollToNext();
-});
-
-$(document).on('click','li.icon-up-open',function(){
-	scrollToPrev();
-});
 
 $(document).on('keypress',function(e){
 	if(e.which==106) {
