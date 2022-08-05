@@ -118,7 +118,7 @@
             </p>
 
             <div class="flex-parent jc-center">
-              <a href="cv/ML_Resume.pdf" download="Resume.pdf">
+              <a href="cv/Overview_Resume.pdf" download="Resume.pdf">
                 <button class="green margin-right">Download Resume</button>
               </a>
 
@@ -333,6 +333,15 @@
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Cloud Intern</h4>
+              <h5>Jun 2022 - Present</h5>
+              <p><em>Silicon Valley Bank (Santa Clara, CA) </em></p>
+              <ul>
+                <li>Used Terraform to provision an ALB and multiple EC2 instances within a target group. Regarding networking, configured security group rules, setup an HTTPS listener, and created an IAM policy for AWS SSM to connect with instances. Used EC2 user data to create a web server on instances. </li>
+                <li>Created an IAM service role to allow EKS to perform basic autoscaling (with respect to nodes) and configured the role with cluster OIDC. Used the role to develop a skeleton for an autoscaler controller and added the deployment YAML to an associated Helm chart.</li>
+              </ul>
+            </div>
             <div class="resume-item">
               <h4>ML Intern</h4>
               <h5>Jun 2021 - Aug 2021</h5>
@@ -581,6 +590,51 @@
                 <p>
                   Developed a Chrome Extension in Javascript to automatically solve Wordle. Wrote an injected script to validate current guess, filter a search space based upon output result, and use differential entropy calculations to determine the next optimal guess-word. Configured background JS to deploy script on button tap.               <div class="event_date">
                 Feb 2022
+              </div>
+            </li>
+            <li class="cs_event hidden">
+              <div class="event_icn icon-address"></div>
+              <div class="event_content">
+                <h2>DB System</h2>
+                <p>
+                  Through cs186, built support for B+ tree indices, efficient join algorithms, and query optimization within a SQL DB. Also added multigranularity locking for concurrent execution, and database recovery.               <div class="event_date">
+                Jan 2022 - May 2022
+              </div>
+            </li>
+            <li class="devops_event hidden">
+              <div class="event_icn icon-briefcase"></div>
+              <div class="event_content">
+                <h2>AWS Certification</h2>
+                <p>
+                  Passed the AWS dev associate certification exam. While studying, provisioned the AWS 3-tier architecture (ALB endpoint, EC2 instances, Amazon RDS backend), wrote custom lambda functions with API gateway triggers, and setup ECS Fargate to handle an nginx service. Also, configured networking with security groups and route53.
+                </p>
+              </div>
+              <div class="event_date">
+                July 2022
+              </div>
+            </li>
+            <li class="devops_event hidden">
+              <div class="event_icn icon-briefcase"></div>
+              <div class="event_content">
+                <h2>EKS Cluster Autoscaler</h2>
+                <p>
+                  Created an IAM service role to allow EKS to perform basic autoscaling (with respect to nodes) and configured the role with cluster OIDC. Used the role to develop a skeleton for an autoscaler controller and added the deployment YAML to an associated Helm chart.
+                </p>
+              </div>
+              <div class="event_date">
+                Jun 2022 - Aug 2022
+              </div>
+            </li>
+            <li class="devops_event hidden">
+              <div class="event_icn icon-briefcase"></div>
+              <div class="event_content">
+                <h2>EKS Ingress Setup</h2>
+                <p>
+                  Provisioned a Network Load Balancer (with associated target groups and listeners) and route53 DNS record for ingress to the EKS cluster. The load balancer worked along the nginx ingress controller to manage traffic requests. 
+                </p>
+              </div>
+              <div class="event_date">
+                Jun 2022 - Aug 2022
               </div>
             </li>
           </ul>
