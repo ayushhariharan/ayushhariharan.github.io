@@ -66,7 +66,7 @@
       <p>I'm a <span class="typed" data-typed-items="Programmer, Researcher, Developer, Innovator"></span></p>
       <div class="social-links">
         <a href="https://twitter.com/ahariharan02" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/ayush0624/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/ayush0624/" class="G"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/ayush.hariharan/" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="https://www.linkedin.com/in/ayush-hariharan-879610182/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
@@ -81,11 +81,12 @@
 
         <div class="section-title">
           <h2>01. About Me</h2>  
-          <p> Hey! I'm Ayush. My biggest fear is complacency, and I've chose software engineering as my secret weapon. Starting back in 2016, I joined a SWE research lab where I was first exposed to machine learning, web development, and quantum computing. 
-            I've presented at international cybersecurity conferences meeting researchers and engineers with different backgrounds.</p>  
+          <p> Hey! I'm Ayush -- an aspiring Software Engineer. I've always wanted to leave an impact on this world and I believe that SWE is the best way to accomplish my goal. 
+            Starting back in 2016, I joined a research lab where I was first exposed to machine learning, web development, and quantum computing.
+            I've presented at international conferences meeting researchers and engineers with different backgrounds.</p>  
           <br>
-          <p>Fast forward to 2022, and I've had the privilege of consulting for Blue Cloak LLC, Vivensity, and Intuitive Surgical in fields of machine learning, cybersecurity, and blockchain. I've also interned at JENOVA where 
-            I developed regression models to predict volatility among stock prices. Currently, I am interning for Silicon Valley Bank where I write automation scripts and deployment manifests for infrastructure provisioning.</p>          
+          <p>Fast forward to 2023, and I've had the privilege of consulting for Blue Cloak LLC, Vivensity, and Intuitive Surgical in fields of machine learning, cybersecurity, and blockchain. I've also interned at JENOVA and SVB where 
+            I've developed regression models to predict stock volatility and written automation scripts for infrastructure provisioning. Currently, I am working at Verkada where I'm tasked with providing the backend infrastructure for Bazel workflows.
         </div>
 
         <div class="row">
@@ -113,12 +114,12 @@
               </div>
             </div>
             <p class="font-italic">
-              Currently, I'm seeking an internship in software engineering or data science in the US. 
+              Currently, I'm seeking a new grad position in software engineering or data science in the US. 
               If you think I'm a good fit, please contact me at <a href = "mailto: ahariharan@berkeley.edu">ahariharan@berkeley.edu</a>
             </p>
 
             <div class="flex-parent jc-center">
-              <a href="cv/Overview_Resume.pdf" download="Resume.pdf">
+              <a href="cv/backend_res.pdf" download="Resume.pdf">
                 <button class="green margin-right">Download Resume</button>
               </a>
 
@@ -145,6 +146,20 @@
 
           <div class="col-lg-6">
             <h3>DevOps Focus</h3>
+
+            <div class="progress">
+              <span class="skill">Kubernetes <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CICD Deployment<i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
       
             <div class="progress">
               <span class="skill">AWS Services<i class="val">90%</i></span>
@@ -164,20 +179,6 @@
               <span class="skill">Terraform <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Kubernetes <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CICD Deployment<i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -316,6 +317,22 @@
             </div>
             <h3 class="resume-title">Consulting Experience</h3>
             <div class="resume-item">
+              <h4>Project Manager -- Joy</h4>
+              <h5>Spring 2023</h5>
+              <p><em>Big Data at Berkeley </em></p>
+              <p>Leveraged causal inference and machine learning to unravel key factors driving wedding registry adoption and user churn. 
+                Used correlation plots and EDA to guide feature development and boost engagement.
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Project Manager -- Hologic</h4>
+              <h5>Fall 2022</h5>
+              <p><em>Big Data at Berkeley </em></p>
+              <p>Utilized the Barlow Twins and other vision transformer models to derive image embeddings from mammography scans. 
+                From these embeddings, used spectral and k-means clustering to derive meaningful information.
+              </p>
+            </div>
+            <div class="resume-item">
               <h4>Data Analyst -- Intuitive Surgical</h4>
               <h5>Spring 2022</h5>
               <p><em>Big Data at Berkeley </em></p>
@@ -334,8 +351,17 @@
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
+              <h4>Infrastructure Intern</h4>
+              <h5>May 2023 - Dec 2023</h5>
+              <p><em>Verkada (San Mateo, CA) </em></p>
+              <ul>
+                <li>Designed a self-hosted infrastructure to speed up execution of remote bazel workflows. Specifically, deployed BuildBuddy workflow runners into Verkada’s k8s with performance tuning such as shared runner cache backed by local SSD. Following the migration, p50 and p75 for workflow duration improved by 9 and 10 minutes respectively.</li>
+                <li>Created an intelligent deployment system with invoke to simplify the development workflow. Using the deployment type (argoCD, lambda, or docker), fanout script would determine the supported deployment shards.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
               <h4>Cloud Intern</h4>
-              <h5>Jun 2022 - Present</h5>
+              <h5>Jun 2022 - Aug 2022</h5>
               <p><em>Silicon Valley Bank (Santa Clara, CA) </em></p>
               <ul>
                 <li>Used Terraform to provision an ALB and multiple EC2 instances within a target group. Regarding networking, configured security group rules, setup an HTTPS listener, and created an IAM policy for AWS SSM to connect with instances. Used EC2 user data to create a web server on instances. </li>
@@ -635,6 +661,75 @@
               </div>
               <div class="event_date">
                 Jun 2022 - Aug 2022
+              </div>
+            </li>
+            <li class="cs_event hidden">
+              <div class="event_icn icon-address"></div>
+              <div class="event_content">
+                <h2>OS Systems</h2>
+                <p>
+                  Through cs162, built a custom OS with support for both user threads and kernel threads. Also provided user program and filesystem support with custom process control syscalls and locking algorithms.               <div class="event_date">
+                Aug 2022 - Dec 2022
+              </div>
+            </li>
+            <li class="cs_event active">
+              <div class="event_icn icon-address"></div>
+              <div class="event_content">
+                <h2>c191 -- Quantum Computing</h2>
+                <p>
+                  Took a Berkeley class about Quantum Computing covering topics from Hilbert spaces to Quantum Circuits. During this class, completed a project which involved using Transformer technolgy to improve the decodability of Quantum surface codes. 
+                </p>
+              </div>
+              <div class="event_date">
+                Spring 2023
+              </div>
+            </li>
+            <li class="devops_event hidden">
+              <div class="event_icn icon-briefcase"></div>
+              <div class="event_content">
+                <h2>BDAB AWS Infra</h2>
+                <p>
+                  Configured IAM identity center and setup user profiles within AWS Sagemaker. Wrote custom IAM policies to maintain a 1-1 mapping between sagemaker profiles and IAM users. Created lifecycle configurations to automatically terminate instances within Sagemaker Studio after 120 minutes of inactivity.
+                </p>
+              </div>
+              <div class="event_date">
+                Feb 2023
+              </div>
+            </li>
+            <li class="devops_event hidden">
+              <div class="event_icn icon-briefcase"></div>
+              <div class="event_content">
+                <h2>BDAB Azure Infra</h2>
+                <p>
+                  Configured Azure AD and setup an Azure ML workspace for BDAB's consulting division. Helped generate access keys to sync BDAB's workspace with Hologic's blob storage while maintaining security of mammography images.
+                </p>
+              </div>
+              <div class="event_date">
+                Mar 2023
+              </div>
+            </li>
+            <li class="devops_event hidden">
+              <div class="event_icn icon-briefcase"></div>
+              <div class="event_content">
+                <h2>Bazel Workflows</h2>
+                <p>
+                  Designed a self-hosted infrastructure to speed up execution of remote bazel workflows. Specifically, deployed BuildBuddy workflow runners into Verkada’s k8s with performance tuning such as shared runner cache backed by local SSD. Following the migration, p50 and p75 for workflow duration improved by 9 and 10 minutes respectively.
+                </p>
+              </div>
+              <div class="event_date">
+                May 2023 - Aug 2023
+              </div>
+            </li>
+            <li class="devops_event hidden">
+              <div class="event_icn icon-briefcase"></div>
+              <div class="event_content">
+                <h2>Prod-Sharding Deployment</h2>
+                <p>
+                  Created an intelligent deployment system with invoke to simplify the development workflow. Using the deployment type (argoCD, lambda, or docker), fanout script would determine the supported deployment shards.
+                </p>
+              </div>
+              <div class="event_date">
+                May 2023 - Aug 2023
               </div>
             </li>
           </ul>
